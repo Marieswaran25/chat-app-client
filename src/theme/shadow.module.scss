@@ -19,6 +19,7 @@ $BlackS:
     0px 8px 40px 0px rgba(0, 0, 0, 0.08);
 $ReportCardShadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
 $ShadowCardGrey: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+$RoundShadow:    8px 8px 8px rgba(0, 0, 0, 0.12);
 :export {
     S: $ShadowS;
     M: $ShadowM;
@@ -28,4 +29,5 @@ $ShadowCardGrey: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
     BlackS: $BlackS;
     ReportCardShadow: $ReportCardShadow;
     ShadowCardGrey: $ShadowCardGrey;
+    RoundShadow:$RoundShadow;
 }
