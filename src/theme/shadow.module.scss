@@ -3,8 +3,8 @@ $ShadowS:
     0px 0px 4px rgba(0, 0, 0, 0.04),
     0px 8px 8px rgba(0, 0, 0, 0.08);
 $ShadowM:
-    0px 0px 4px rgba(0, 0, 0, 0.04),
-    0px 8px 12px rgba(0, 0, 0, 0.12);
+    4px -4px 4px rgba(0, 0, 0, 0.04),
+    -4px 8px 12px rgba(0, 0, 0, 0.12);
 $ShadowL:
     0px 0px 4px rgba(0, 0, 0, 0.04),
     0px 8px 16px rgba(0, 0, 0, 0.16);
@@ -19,7 +19,10 @@ $BlackS:
     0px 8px 40px 0px rgba(0, 0, 0, 0.08);
 $ReportCardShadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
 $ShadowCardGrey: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
-$RoundShadow:    8px 8px 8px rgba(0, 0, 0, 0.12);
+$RoundShadow: 8px 8px 8px rgba(0, 0, 0, 0.12);
+$FullShadow:
+    0 0 4px rgba(0, 0, 0, 0.04),
+    0 0 12px rgba(0, 0, 0, 0.12);
 :export {
     S: $ShadowS;
     M: $ShadowM;
@@ -29,5 +32,5 @@ $RoundShadow:    8px 8px 8px rgba(0, 0, 0, 0.12);
     BlackS: $BlackS;
     ReportCardShadow: $ReportCardShadow;
     ShadowCardGrey: $ShadowCardGrey;
-    RoundShadow:$RoundShadow;
+    RoundShadow: $RoundShadow;
 }

@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
+import { SignupCard } from '@components/Auth/SignUp';
 import colors from '@theme/colors.module.scss';
-import { Spinner } from '@library/Spinner';
-import Typography from '@library/Typography';
+import { View } from '@components/View';
 
-export default function page() {
+export default function Homepage() {
+    const center: CSSProperties = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+    };
     return (
-        <div>
-            <Spinner loadingColor={colors.C5} />
-            <Typography type={'caption'} weight={'light'} text={'enrhew'} color={colors.Black16} />
+        <div style={{ background: colors.C9 }}>
+            <View style={center}>
+                <SignupCard />
+            </View>
         </div>
     );
 }

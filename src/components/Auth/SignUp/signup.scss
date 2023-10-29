@@ -1,0 +1,29 @@
+@import '@theme/colors.module.scss';
+@import '@theme/viewport.scss';
+@import '@theme/gradient.module.scss';
+@import '@theme/common.module.scss';
+@import '@theme/shadow.module.scss';
+
+.signup-card {
+    > .logo {
+        width: 150px;
+        height: 150px;
+        stroke: $Black16;
+    }
+    > #signup-title {
+        font-size: 1.3rem;
+    }
+    @include flex-model(column, center, center, 0.2rem);
+    background: $bg-gradient-1 !important;
+    border-radius: 50px;
+    height: 600px;
+    width: 400px;
+    box-shadow: $FullShadow;
+    > div {
+        margin-top: 5rem;
+    }
+    @include mobile {
+        width: 100%;
+    }
+    padding: 2rem;
+}

@@ -113,7 +113,7 @@ export const Button = ({
     }`;
     return (
         <>
-            <style>{onhover}</style>
+            {props.id && backgroundColorOnHover && <style>{onhover}</style>}
             <button
                 type={type ? type : 'button'}
                 {...props}

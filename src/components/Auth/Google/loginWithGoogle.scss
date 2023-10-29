@@ -1,0 +1,23 @@
+@import '@theme/colors.module.scss';
+@import '@theme/viewport.scss';
+@import '@theme/common.module.scss';
+
+.google-card {
+    max-width: 400px;
+    width: 100%;
+    height: 70px;
+    border: 1px solid $C9;
+    border-radius: 50px;
+    cursor: pointer;
+    @include flex-model(row, center, center, 1rem);
+    svg {
+        width: 45px;
+    }
+    &:hover {
+        background-color: $C9;
+        transition: background-color 0.5s;
+        span {
+            color: $White !important;
+        }
+    }
+}
