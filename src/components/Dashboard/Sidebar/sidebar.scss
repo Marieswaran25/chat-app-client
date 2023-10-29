@@ -1,0 +1,97 @@
+@import '@theme/colors.module.scss';
+@import '@theme/viewport.scss';
+@import '@theme/gradient.module.scss';
+@import '@theme/common.module.scss';
+@import '@theme/shadow.module.scss';
+
+.side-bar {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    transition: max-width 0.3s ease-in;
+    @include flex-model-nogap(column, center, flex-start);
+    .logo-wrapper {
+        width: 50px;
+        height: 50px;
+        margin-top: 1rem;
+        svg {
+            fill: $White;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .side-bar-items {
+        width: 100%;
+        margin-top: 35%;
+        @include flex-model(column, center, center, 2rem);
+        svg,
+        path {
+            stroke: $White;
+            stroke-width: 1.5;
+            width: 30px;
+            height: 30px;
+        }
+        > div {
+            width: 90%;
+            @include flex-model-nogap(row, center, center);
+            cursor: pointer;
+            button {
+                width: 100%;
+                padding: 1rem;
+                border-radius: 50px;
+                @include flex-model-nogap(row, center, center);
+            }
+        }
+    }
+}
+.close-icon {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5rem;
+    right: -15px;
+    cursor: pointer;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: $White;
+        stroke: $C5 !important;
+        stroke-width: 2;
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in;
+        &:hover {
+            fill: $C5;
+            stroke: $White !important;
+        }
+        &.closed {
+            transform: rotate(0deg);
+        }
+    }
+}
+.user-info-wrapper {
+    margin-top: 100%;
+    &.nomargin {
+        margin-top: 50%;
+    }
+    @include flex-model(column, center, center, 1rem);
+    width: 100%;
+    svg,
+    path {
+        stroke: $White !important;
+        stroke-width: 1;
+        width: 30px;
+        height: 30px;
+    }
+    > div {
+        width: 90%;
+        @include flex-model-nogap(row, center, center);
+        cursor: pointer;
+        button {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 50px;
+            @include flex-model-nogap(row, center, center);
+        }
+    }
+}

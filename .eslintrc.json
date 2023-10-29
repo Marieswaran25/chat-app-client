@@ -1,16 +1,16 @@
 {
-  "extends": ["next/core-web-vitals", "@prenetics/eslint-config-react"],
-  "rules": {
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
-  },
-  "settings": {
-      "import/resolver": {
-          "node": {
-              "paths": ["src"],
-              "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
-          },
-          "typescript": {}
-      }
-  }
+    "extends": ["next/core-web-vitals", "@prenetics/eslint-config-react"],
+    "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+            },
+            "typescript": {}
+        }
+    }
 }
